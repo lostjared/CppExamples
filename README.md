@@ -19,3 +19,8 @@ This shows how to setup a basic autotools project
 
 This shows how to setup a basic autotools project for creating a shared library
 
+# Example05 - Using our shared library from example04
+
+This shows how to use the shared library we created
+
+
