@@ -17,7 +17,6 @@ int main(int argc, char **argv) {
     }
     
     cv::namedWindow("opencv");
-    
     bool active = true;
     while(active) {
         cv::Mat frame;
@@ -25,6 +24,5 @@ int main(int argc, char **argv) {
         cv::imshow("opencv", frame);
         if(cv::waitKey(10) == 'e') exit(0);
     }
-
     return 0;
 }
