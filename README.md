@@ -23,4 +23,7 @@ This shows how to setup a basic autotools project for creating a shared library
 
 This shows how to use the shared library we created
 
+# Example06 - How to compile OpenCV program 
+
+This shows how you can create a program with opencv after you built the code from source
 
