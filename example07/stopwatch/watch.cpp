@@ -9,7 +9,7 @@ namespace watch {
         stop_time = std::chrono::system_clock::now();
     }
     void SystemClock::echo(std::string name) {
-        std::cout << "Timer was active for: " << std::chrono::duration_cast<std::chrono::milliseconds>(stop_time-start_time).count() << " milliseconds\n";
+        std::cout << "Timer for " << name << " was active for: " << std::chrono::duration_cast<std::chrono::milliseconds>(stop_time-start_time).count() << " milliseconds\n";
         
     }
     unsigned long SystemClock::timePassed() {
@@ -25,7 +25,7 @@ namespace watch {
         stop_time = std::chrono::high_resolution_clock::now();
     }
     void HighResClock::echo(std::string n) {
-        std::cout << "Timer was active for: " << std::chrono::duration_cast<std::chrono::nanoseconds>(stop_time-start_time).count() << " nanoseconds\n";
+        std::cout << "Timer for: " << n << " was active for: " << std::chrono::duration_cast<std::chrono::nanoseconds>(stop_time-start_time).count() << " nanoseconds\n";
     }
     unsigned long HighResClock::timePassed() {
         auto n = std::chrono::high_resolution_clock::now();
