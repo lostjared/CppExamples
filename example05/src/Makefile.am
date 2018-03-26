@@ -1,6 +1,8 @@
-bin_PROGRAMS=extest
-extest_SOURCES=main.cpp
-AM_CPPFLAGS= -std=c++11 $(all_includes) $(EXT_INCLUDES)
-extest_LDADD= $(EXT_LIBS)
-
-
+AM_CPPFLAGS= $(all_includes)
+lib_LTLIBRARIES=libexample.la
+libexample_includedir= $(includedir)/example
+libexample_include_HEADERS=example.h
+libexample_la_SOURCES=example.cpp
+libexample_la_CXXFLAGS=-std=c++11
+pkgconfigdir=$(libdir)/pkgconfig
+pkgconfig_DATA= ../example.pc
