@@ -1,0 +1,6 @@
+
+First install arm-linux-gnueabihf then
+
+$ ./autogen.sh && ./configure --prefix=/usr/local/arm --target=arm-linux-gnueabihf --host=arm-linux-gnueabihf && make
+
+
