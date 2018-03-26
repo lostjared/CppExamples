@@ -27,3 +27,6 @@ This shows how to use the shared library we created
 
 This shows how you can create a program with opencv after you built the code from source
 
+# Example07 - How to create a Stop Watch timer
+
+This shows how you can create a template for a stop watch to time how long parts of your code take to execute
