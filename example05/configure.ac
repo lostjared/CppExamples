@@ -13,6 +13,13 @@ AC_PROG_LN_S
 AC_PROG_MAKE_SET
 
 PKG_CHECK_MODULES(EXAMPLE, example, found=1, found=0)
+
+if test $found = 0; then
+AC_MSG_ERROR(Error could not find Example library (example04) pkg-config file is it installed?)
+else
+echo "Library Found!"
+fi
+
 EXT_CFLAGS=$EXAMPLE_CFLAGS
 EXT_LIBS=$EXAMPLE_LIBS
 
