@@ -4,6 +4,7 @@
 #include<chrono>
 #include<thread>
 #include<cstdlib>
+#include<algorithm>
 
 int main(int argc, char **argv) {
     
