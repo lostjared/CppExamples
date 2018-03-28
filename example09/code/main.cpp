@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
     while(active) {
         cv::Mat m;
         if(!cap.read(m)) {
-            std::cerr << "End of file..\n";
+            std::cerr << "No more frames, End of file..\n";
             exit(EXIT_SUCCESS);
         }
         ac::Bitwise_XOR(m); // filter from ac.h
